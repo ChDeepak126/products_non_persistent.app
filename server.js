@@ -6,6 +6,9 @@ const app = express();
 app.use(express.json());
 
 const products = [];
+app.get("/", (req, res) => {
+  res.send("<h1>Products API is running!</h1><p>Visit /products to access the products API.</p>");
+});
 
 // ================= CRUD =================
 
